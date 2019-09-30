@@ -9,3 +9,4 @@ Using ZED-m camera multiple videos of the indoor scene (our workplace) is collec
 
 ![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/1.png) 
 ![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/2.png)
+![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/3.png)
