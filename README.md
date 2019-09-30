@@ -4,4 +4,4 @@ The indoor dataset is collected using ZED-m camera for training and evaluating t
 1. Predict depth maps for an indoor-environment scene.
 2. Used predicted deph map for robot palletization(pick-n-place task).
 
-##Task-1: 
+## Task-1: 
