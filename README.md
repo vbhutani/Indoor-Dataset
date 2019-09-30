@@ -4,7 +4,7 @@ The indoor dataset is collected using ZED-m camera for training and evaluating t
 1. Predict depth maps for an indoor-environment scene.
 2. Used predicted deph map for robot palletization (pick-n-place task).
 
-## Task-1: Depth Maps for an Indoor Scene.
+## Task-1: Predict Depth Maps for an Indoor-environment Scene.
 Using ZED-m camera multiple videos of the indoor scene (our workplace) is collected. From the video, stereo-rectified pair of images are obtained. We collected around 12,000 frames for training the network. 
 
 ![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/1.png) 
