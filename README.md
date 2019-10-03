@@ -2,7 +2,7 @@
 
 The indoor dataset is collected using [ZED Mini](https://www.stereolabs.com/developers/release/) camera for training and evaluating the network in real-time. The collected dataset is used for two objectives:
 1. Predict depth maps for an indoor-environment scene.
-2. Used predicted deph map for robot palletization (pick-n-place task).
+2. Used predicted deph map for Robot Palletization (pick-n-place task).
 
 ## Task-1: Predict Depth Maps for an Indoor-environment Scene.
 Using ZED-m camera multiple videos of the indoor scene (our workplace) is collected. From the video, stereo-rectified pair (left and right) of images are obtained. We collected around 12,000 frames for training the network. Some randomly sampled images, their depth, confidence maps and reconstructed point clouds are shown in the figure below:
@@ -22,3 +22,5 @@ Using ZED-m camera multiple videos of the indoor scene (our workplace) is collec
 ![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/1_pc.jpg)
 ![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/2_pc.jpg)
 ![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/4_pc.jpg)
+
+## Task-2: Used predicted depth map for Robot Palletization (pick-n-place task).
