@@ -31,11 +31,16 @@ We created a setup with multiple boxes placed on a table having different sizes 
 ![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/Setup_images/13.png)
 
 ![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/Setup_images/1_d.png)
+![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/Setup_images/11_d.png)
+![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/Setup_images/13_d.png)
 
 
 ![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/Setup_images/1_c.png)
-
+![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/Setup_images/11_c.png)
+![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/Setup_images/13_c.png)
 
 ![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/Setup_images/1_p.png)
+![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/Setup_images/11_p.png)
+![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/Setup_images/13_p.png)
 
 We captured a RGB image of the setup and using the trained model we predict the depth map of it. With the RGB image and the depth map, we created a 3D point-cloud of the setup. On the point-cloud then applied region growing algorithm to locate the box and move the UR10 collaborative robotic arm to its centroid to pick the box. We also used confidence maps for masking out those pixels having confidence values less than the threshold value (90% for our case) to test the authenticity of the predicted confidence maps.
