@@ -24,7 +24,7 @@ Using ZED-m camera multiple videos of the indoor scene (our workplace) is collec
 ![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/4_pc.jpg)
 
 ## Task-2: Used predicted depth map for Robot Palletization task.
-We created a setup with multiple boxes placed on a table having different sizes and placed at different orientations. The setup is created so as to enable the robotic arm to perform pick and place task of a box after navigating to its centroid position. Using ZED Mini the dataset is created of the setup and network is trained with the collected dataset. Some randomly sampled images, their depth maps, confidence maps, and reconstructed point cloud are shown in the figure below:
+We created a setup with multiple boxes placed on a table having different sizes and placed at different orientations. The setup is created so as to enable the robotic arm to perform pick and place task of a box after navigating to its centroid position. Using ZED Mini the image dataset is created of the setup and network is trained with the collected dataset. Some randomly sampled images, their depth maps, confidence maps, and reconstructed point cloud are shown in the figure below:
 
 ![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/Setup_images/1.png)
 ![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/Setup_images/11.png)
@@ -43,4 +43,5 @@ We created a setup with multiple boxes placed on a table having different sizes 
 ![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/Setup_images/11_p.png)
 ![alt text](https://github.com/vbhutani/Indoor-Dataset/blob/master/Sample-Images/Setup_images/13_p.png)
 
-We captured a RGB image of the setup and using the trained model we predict the depth map of it. With the RGB image and the depth map, we created a 3D point-cloud of the setup. On the point-cloud then applied region growing algorithm to locate the box and move the UR10 collaborative robotic arm to its centroid to pick the box. We also used confidence maps for masking out those pixels having confidence values less than the threshold value (90% for our case) to test the authenticity of the predicted confidence maps.
+For evaluating the model in real time, we captured a RGB image of the setup and using the trained model predicted the depth map of it. With the RGB image and the depth map, we created a 3D point-cloud of the setup. On the point-cloud then applied region growing algorithm to locate the box and move the UR10 collaborative robotic arm to its centroid to pick the box. We also used confidence maps for masking out those pixels having confidence values less than the threshold value (90% for our case) to test the authenticity of the predicted confidence maps. The depth map and the output from region growing algorithm is shown below:
+
